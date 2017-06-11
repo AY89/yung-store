@@ -1,0 +1,31 @@
+{
+  "name": "yung-store",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "custom-react-scripts": "0.0.23"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "material-ui": "0.16.7",
+    "mobx": "3.1.0",
+    "mobx-react": "4.1.0",
+    "mobx-react-router": "3.1.2",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-router": "3.0.2",
+    "react-tap-event-plugin": "2.0.1",
+    "aws-sdk": "2.50.0",
+    "amazon-cognito-identity-js": "1.16.0",
+    "aws-api-gateway-client": "0.1.12"
+  },
+  "scripts": {
+    "start": "REACT_APP_ENVIRONMENT=dev react-scripts start",
+    "start-prod": "REACT_APP_ENVIRONMENT=prod react-scripts start",
+    "start-dev": "REACT_APP_ENVIRONMENT=dev react-scripts start",
+    "start-staging": "REACT_APP_ENVIRONMENT=staging react-scripts start",
+    "build-prod": "REACT_APP_ENVIRONMENT=prod react-scripts build",
+    "build-dev": "REACT_APP_ENVIRONMENT=dev react-scripts build",
+    "build-staging": "REACT_APP_ENVIRONMENT=staging react-scripts build"
+  }
+}
