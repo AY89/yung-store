@@ -1,0 +1,14 @@
+@import '../App';
+
+.dashboard {
+  
+  .user-clickable {
+    color: $full-white;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: $full-white;
+    }
+  }
+}

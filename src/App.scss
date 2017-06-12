@@ -1,0 +1,51 @@
+$full-white: #fff;
+$full-black: #000;
+$light-grey: #c0c0c0;
+$theme-blue: #00bcd4;
+$navy-blue: #01579B;
+$dark-grey: #9E9E9E;
+$border-grey: #eee;
+$reported-red: #D50000;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    .breadcrumbs {
+        font-weight: normal;
+        a {
+            text-decoration: none;
+            color: $full-black;
+            &:hover {
+                text-decoration: none;
+                color: $theme-blue;
+            }
+        }      
+    }
+}
+
+.header-title {
+    font-size: 1em;
+}
+
+.radio-button {
+    display: inline-block !important;
+    width: 141px !important;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+// used for CircularProgress if waiting for page to load
+.progress { 
+    position: fixed !important;
+    top: 50vh;
+    left: 50vw;
+}
