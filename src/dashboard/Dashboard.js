@@ -35,7 +35,7 @@ class Dashboard extends Component {
                 <AppBar title={title}
                             showMenuIconButton={false}
                             iconElementRight={<FlatButton onClick={this.handleLogout.bind(this)} label="Logout" />}/>
-                <div>test</div>
+                <div>{JSON.stringify(this.store.cards)}</div>
             </div>
         );
     }
