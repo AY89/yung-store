@@ -30,14 +30,21 @@ class Dashboard extends Component {
 
     render() {
         let title =  <Link to="/dashboard" className="user-clickable">{appConfig.title[process.env.REACT_APP_ENVIRONMENT]}</Link>;
-        return (
-            <div className="dashboard">
-                <AppBar title={title}
-                            showMenuIconButton={false}
-                            iconElementRight={<FlatButton onClick={this.handleLogout.bind(this)} label="Logout" />}/>
-                <div>{JSON.stringify(this.store.cards)}</div>
-            </div>
-        );
+        let state = this.store.state;
+        if (state === "loaded") {
+            return (
+                <div className="dashboard">
+                    <AppBar title={title}
+                                showMenuIconButton={false}
+                                iconElementRight={<FlatButton onClick={this.handleLogout.bind(this)} label="Logout" />}/>
+                    <div><img className="video-image" src={this.store.cards[0].imageUrl} role="presentation" /></div>
+                </div>
+            );
+        } else {
+            return (
+                <CircularProgress className="progress" />
+            );
+        }
     }
 }
 
